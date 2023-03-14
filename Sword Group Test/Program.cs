@@ -22,7 +22,7 @@ namespace Sword_Group_Test
 
             if (!lines.Any()) 
             {
-                Console.WriteLine("Stopping process.....");
+                Console.WriteLine("No text to evaluate. Stopping process.....");
                 Environment.Exit(0);
             }
 
