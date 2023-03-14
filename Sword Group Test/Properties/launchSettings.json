@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Sword Group Test": {
+      "commandName": "Project",
+      "commandLineArgs": "test.txt\r\n"
+    }
+  }
+}
