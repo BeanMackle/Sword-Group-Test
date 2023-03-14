@@ -24,7 +24,6 @@ namespace Sword_Group_Test
 
 		public static bool GetCaseSensitiveValue(string caseSensitiveString) 
 		{
-
 			if (bool.TryParse(caseSensitiveString, out bool caseSensitive))
 			{
 				return caseSensitive;

@@ -6,7 +6,8 @@ namespace Sword_Group_Test
     {
         static void Main(string[] args)
         {
-            if (args is null || !args.Any()) {
+            if (args is null || !args.Any()) 
+            {
                 Console.WriteLine("Mandatory file location paramater not provided! Stopping process.....");
                 Environment.Exit(0);
             }
@@ -58,7 +59,8 @@ namespace Sword_Group_Test
 
                 char[] chars = cleanLine.ToCharArray();
 
-                foreach(char character in chars) {
+                foreach(char character in chars) 
+                {
                    if(charCountDictionary.TryGetValue(character, out int count))
                     {
                         charCountDictionary[character] = count + 1;
