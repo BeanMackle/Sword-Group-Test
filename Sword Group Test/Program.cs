@@ -22,8 +22,8 @@ namespace Sword_Group_Test
             }
 
             bool caseSensitive = args.Length > 1 ? ArgumentHelpers.GetCaseSensitiveValue(args[1]) : true;
-
             var charCountDictionary = BuildCharDictionary(lines, caseSensitive);
+
             PrintResults(charCountDictionary);
             Console.ReadKey();
         }
@@ -35,8 +35,8 @@ namespace Sword_Group_Test
             {
                 totalCharacters += count;
             }
-
             Console.WriteLine($"Total Characters: {totalCharacters}");
+
             var topCharacters = charCountDictionary.OrderByDescending(c => c.Value).Take(10).ToDictionary(d => d.Key, d=> d.Value);
             foreach(char character in topCharacters.Keys)
             {
