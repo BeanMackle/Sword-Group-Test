@@ -14,7 +14,8 @@ namespace Sword_Group_Test
             string filePath = args[0];
             string[] lines = ArgumentHelpers.ParseFile(filePath);
 
-            if (!lines.Any()) {
+            if (!lines.Any()) 
+            {
                 Console.WriteLine("Stopping process.....");
                 Environment.Exit(0);
             }
@@ -42,7 +43,8 @@ namespace Sword_Group_Test
             }
         }
 
-        static Dictionary<char, int> BuildCharDictionary(string[] lines, bool caseSensitive) {
+        static Dictionary<char, int> BuildCharDictionary(string[] lines, bool caseSensitive) 
+        {
             Dictionary<char, int> charCountDictionary = new Dictionary<char, int>();
 
             foreach (string line in lines)

@@ -8,7 +8,8 @@ namespace Sword_Group_Test
 {
     internal class ArgumentHelpers
     {
-        public static string[] ParseFile(string filePath) {
+        public static string[] ParseFile(string filePath) 
+		{
 			try
 			{			
 				return File.ReadAllLines(filePath);
@@ -21,7 +22,8 @@ namespace Sword_Group_Test
 			}
         }
 
-		public static bool GetCaseSensitiveValue(string caseSensitiveString) {
+		public static bool GetCaseSensitiveValue(string caseSensitiveString) 
+		{
 
 			if (bool.TryParse(caseSensitiveString, out bool caseSensitive))
 			{
