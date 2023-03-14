@@ -12,6 +12,11 @@ namespace Sword_Group_Test
                 Environment.Exit(0);
             }
 
+            if (!args[0].EndsWith(".txt")) {
+                Console.WriteLine("Invalid file format specified. Stopping process.....");
+                Environment.Exit(0);
+            }
+
             string filePath = args[0];
             string[] lines = ArgumentHelpers.ParseFile(filePath);
 
