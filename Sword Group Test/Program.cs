@@ -8,7 +8,7 @@ namespace Sword_Group_Test
         {
             if (args is null || !args.Any()) 
             {
-                Console.WriteLine("Mandatory file location paramater not provided! Stopping process.....");
+                Console.WriteLine("Mandatory file location parameter not provided! Stopping process.....");
                 Environment.Exit(0);
             }
 
